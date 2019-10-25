@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="site-width">
+      <h1><a href="index.html">WEBUKATU</a></h1>
+      <nav id="top-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#merit">MERIT</a></li>
+          <li><a href="#recruit">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <!-- Contact -->
+      <section id="contact" class="site-width">
+        <h1 class="title">CONTACT</h1>
+        <form>
+          <div class="form-group">
+            <label
+              >名前：任意<span class="help-block"></span>
+              <input type="text" name="name" class="valid-text" />
+            </label>
+          </div>
+          <div class="form-group">
+            <label
+              >E-mail：＊必須<span class="help-block"></span>
+              <input type="text" name="email" class="valid-email" />
+            </label>
+          </div>
+          <div class="form-group">
+            <label
+              >内容：＊必須<span class="help-block"></span>
+              <textarea
+                cols="100"
+                rows="10"
+                name="comment"
+                class="valid-textarea"
+              ></textarea>
+            </label>
+          </div>
+          <input type="submit" name="submit" value="送信" />
+        </form>
+      </section>
+    </div>
+    <footer>
+      Copyright
+      <a href="https://webukatu.com/">ウェブカツ!!サンプルホームページ</a>. All
+      Rights Reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

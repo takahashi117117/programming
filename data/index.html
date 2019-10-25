@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hello</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+
+        <h1 class="logo">HELLO WORLD</h1>
+        <div id="wrap">
+        <ul class="nav">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
+        <ul class="nav02">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
+        </div>
+        <ul class="nav02">
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+        </ul>
+        <button>ボタン</button>
+
+        <script>
+            /*$(function (){
+                $("button").click(function(){
+                    $("h1").text("クリック！！！");
+                });
+            });*/
+
+            /*$(function(){
+                $("button").on("click", function(){
+                    document.write("クリックされました");
+                });
+            });*/
+
+            //h1をクリックすると、clickedというclassが付与され、クリックすると、clickedが外れる
+            /*$(function(){
+                $("h1").click(function(){
+                    if($(this).hasClass("clicked")){
+                        $(this).removeClass("clicked");
+                    }else {
+                        $(this).addClass("clicked");
+                    }
+                });
+            });*/
+
+            ////buttonをクリックすると、clickedというclassが付与され、クリックすると、clickedが外れる
+            /*$(function(){
+                $("button").click(function(){
+                    $(this).toggleClass("logo");
+                });
+            });*/
+
+            /*$(function(){
+                $("button").click(function(){
+                    $("#wrap").children("li").css("color","red");
+                });
+            });*/
+
+            /*let $button = $("button");
+            $(function(){
+                $button.text("ここをクリック");
+            });*/
+
+            $(function(){
+                $("h1").hover(function(){
+                    $("h1").fadeOut();
+                });
+            });
+
+        </script>
+    </body>
+</html>

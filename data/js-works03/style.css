@@ -1,0 +1,35 @@
+.tab_btn{
+	display : flex;
+}
+.tab_btn li{
+	margin : 0 30px;
+	padding : 20px;
+	list-style : none;
+	cursor : pointer;
+	color : #ffffff;
+	background : #333333;
+}
+.tab_btn li.active{
+	background : #aa1111;
+}
+.tab_box{
+	display : none;
+}
+@keyframes tabAnim{
+	0%{
+		opacity : 0;
+	}
+	100%{
+		opacity : 1;
+	}
+}
+.tab_box.show{
+	display : block;
+	animation : tabAnim ease 1s forwards;
+}
+#tab_wrap{
+	width : 500px;
+	height : 300px;
+	padding : 20px;
+	border : 1px solid #333333;
+}

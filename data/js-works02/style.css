@@ -1,0 +1,10 @@
+#js-accordion dt{
+	padding : 20px;
+	cursor : pointer;
+	background : #aaaaaa;
+}
+#js-accordion dd{
+	display : none;
+	padding : 20px;
+	background : #aa1111;
+}
