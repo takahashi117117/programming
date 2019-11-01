@@ -7,18 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <?php
-    $i = 1;
-    $sum = 0;
-    while ($i <= 100) {
-      if( $i % 7 === 0 ){
-        echo $i."は7の倍数の和<br>";
-        $sum += $i;
-      }
-      $i++;
-    }
-    echo "合計は".$sum;
-  ?>
+
+<?php
+  $colors = $_POST["colors"];
+  //var_dump($colors);
+?>
+
+<ul>
+<?php foreach ($colors as $key => $value) { ?>
+  <li><?php echo $value; ?></li>
+<?php } ?>
+</ul>
+
+
+
 
 
 </body>
