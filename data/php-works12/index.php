@@ -9,19 +9,18 @@
 <body>
 
 <?php
-  $colors = $_POST["colors"];
-  //var_dump($colors);
+  //FizzBuzz問題回答
+  for ($i = 1 ; $i <= 100 ; $i++) {
+    if( $i % 3 === 0 && $i % 5 === 0 ){
+      echo "FizzBuzz"."<br>";
+    }else if( $i % 3 === 0 ){
+      echo "Fizz"."<br>";
+    }else if( $i % 5 === 0 ){
+      echo "Buzz"."<br>";
+    }else
+    echo $i."<br>";
+  }
 ?>
-
-<ul>
-<?php foreach ($colors as $key => $value) { ?>
-  <li><?php echo $value; ?></li>
-<?php } ?>
-</ul>
-
-
-
-
 
 </body>
 </html>
